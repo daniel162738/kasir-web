@@ -3,17 +3,17 @@
 }
 
 :root {     --bg-color: #000000;
-    --second-bg-color: #1d1d1d;
-    --text-color: #00c40a;
-    --main-color: #19551e;
-    --bg-h-color: #161718; 
-    --green1: #002502;
-    --green2: #0f3811;
-    --green3: #315332;
-    --green4: #67a769;
-    --test1: #a6ff00;
-    --test2: #e00700;
-    --test3: #2200e4;
+            --second-bg-color: #1d1d1d;
+            --text-color: #00c40a;
+            --main-color: #19551e;
+            --bg-h-color: #161718; 
+            --green1: #002502;
+            --green2: #0f3811;
+            --green3: #315332;
+            --green4: #67a769;
+            --test1: #a6ff00;
+            --test2: #e00700;
+            --test3: #2200e4;
     
 
 }
@@ -73,7 +73,24 @@ body {
 }
 
 .container header .addItemBtn {
+    margin-bottom: 15px;
+}
 
+header .addItemBtn button {
+    padding: 9px 14px;
+    color: var(--test1);
+    background: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    pointer-events: auto;
+    outline: none;
+    border: 1px solid var(--test2);
+    background: var(--test3);
+    border-radius: 5px;
+}
+
+.addItemBtn button:hover {
+    background: var(--test1);
 }
 
 
