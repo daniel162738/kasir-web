@@ -186,7 +186,7 @@ section {   min-height: 100vh;
 .btn-box .btn:hover {
             color: var(--main-color); }
 
-.btn-box .btn:nth-child(2) {
+/*.btn-box .btn:nth-child(2) {
             background: transparent;
             color: var(--main-color); }
 
@@ -194,7 +194,7 @@ section {   min-height: 100vh;
             color: var(--bg-color); }
 
 .btn-box .btn:nth-child(2)::before {
-            background: var(--main-color); }
+            background: var(--main-color); }*/
 
 .btn-box .btn::before {
             content: '';

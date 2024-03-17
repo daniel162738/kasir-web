@@ -1,7 +1,7 @@
 .home-content .text-animate {
     position: relative;
-    max-width: 16rem;
-    width: 9 rem; }/*ubah rem*/
+    max-width: 16rem; /*ubah rem*/
+    width: 9 rem; }
 
 
 .animate {

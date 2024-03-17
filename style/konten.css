@@ -23,16 +23,16 @@ body {
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
-    background: linear-gradient(var(--test1) 50%, var(--test2) 50%);
+    background: var(--bg-color);
 }
 
 .container {
     padding: 20px;
-    box-shadow: 3px 3px 20px var(--test3);
-    background: var(--bg-color);
-    border-radius: 10px;
-    margin: 10px;
-    margin-top: 50px;
+    box-shadow: 3px 3px 30px var(--text-color);
+    background: var(--bg-h-color);
+    border-radius: 20px;
+    margin: 1px;
+    margin-top: 20px;
 }
 
 .container header .filterEntries {
@@ -43,15 +43,15 @@ body {
 }
 
 .filterEntries .entries {
-    color: var(--test1);
+    color: var(--text-color);
 }
 
 .filterEntries .entries select,
 .filterEntries .filter input {
     padding: 7px 10px;
-    border: 1px solid var(--test2);
-    color: var(--test3);
-    background: var(--test1);
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    background: var(--second-bg-color);
     border-radius: 5px;
     outline: none;
     transition: 0.3s;
@@ -64,13 +64,17 @@ body {
 }
 
 .filter label {
-    color: var(--test3);
+    color: var(--text-color);
     margin-right: 5px;
 }
 
 .filter input:focus {
-    border-color: var(--test1);
+    border-color: var(--bg-color);
 }
+
+
+
+
 
 .container header .addItemBtn {
     margin-bottom: 15px;
@@ -78,25 +82,75 @@ body {
 
 header .addItemBtn button {
     padding: 9px 14px;
-    color: var(--test1);
-    background: transparent;
+    color: var(--bg-color);
+    background: var(--main-color);
     font-size: 16px;
     cursor: pointer;
     pointer-events: auto;
     outline: none;
-    border: 1px solid var(--test2);
-    background: var(--test3);
+    border: 3px solid var(--main-color);
+    
     border-radius: 5px;
 }
 
 .addItemBtn button:hover {
-    background: var(--test1);
+    color: var(--main-color);
+    background: var(--bg-color);
 }
 
 
 
+/*.btn-box {  position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 34.5rem;
+    height: 5rem; }
 
+.btn-box .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 100%;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: var(--bg-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s; }
 
+.btn-box .btn:hover {
+    color: var(--main-color); }
+
+/*.btn-box .btn:nth-child(2) {
+    background: transparent;
+    color: var(--main-color); }
+
+.btn-box .btn:nth-child(2):hover {
+    color: var(--bg-color); }
+
+.btn-box .btn:nth-child(2)::before {
+    background: var(--main-color); }
+
+.btn-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: .5s; }
+
+.btn-box .btn:hover:before {
+    width: 100%; }
+*/
 
 
 
