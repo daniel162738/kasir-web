@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <title>Full Kasir</title>
 
-    <link rel="stylesheet" href="style/index.css">
+
+    
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/tambah.css">
+    
 
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -15,22 +21,76 @@
 <body>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--   -   -   H   -   -   E   -   -   A   -   -   D   -   -   E   -   -   R   -   -   -->
     <header class="header">
-        <a href="#" class="logo">SMB</a>
+
+
+        <a href="#" class="logo">
+            SMB
+            <span class="animate" style="--i:1;"></span>
+        </a>
+
 
         <div class="bx bx-menu" id="menu-icon"></div>
+
+
         <nav class="navbar">
-            <a href="index.html" class="active">Home</a>
+            <a href="index.html">Index</a>
             <a href="kasir.html">Kasir</a>
-            <a href="tambah.html">Tambah</a>
+            <a href="tambah.html" class="active">Tambah</a>
             <a href="database.html">Database</a>
             <a href="history.html">History</a>
             <a href="login.html">Logout</a>
+
+
+            <span class="animate" style="--i:2;"></span>
+
+
         </nav>
     </header>
-
 <!--   -   -   H   -   -   E   -   -   A   -   -   D   -   -   E   -   -   R   -   -   -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -39,18 +99,160 @@
 
 
 <!--   -   -   K   -   -   O   -   -   N   -   -   T   -   -   E   -   -   N   -   -   -->
-
-    <section class="home" id="home">
+    <section class="home"id="home">
         <div class="home-content">
-            <h1>text <span>text text </span></h1>
-            <div class="text-animate">
-                <h3>textextxte</h3>
-            </div>
-            <p>Lorem ipsum dolor sit amet.</p>
 
+
+            <h1>
+                Minimarket Online
+                <span class="animate" style="--i:3;"></span>
+            </h1>
+
+
+            <div class="text-animate">
+                <h3>
+                    Tambah
+                    <span class="animate" style="--i:1;"></span>
+                </h3>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="container">
+                <header>
+
+                    <div class="filterEntries">
+                        <div class="entries">
+                            Show <select name="" id="table_size">
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select> entries
+                        </div>
+
+                        <div class="filter">
+                            <label for="search">Search:</label>
+                            <input type="search" name="" id="search" placeholder="Masukan Data">
+                        </div>
+                    </div>
+
+                    <div class="addItemBtn">
+                        <button>Barang Baru</button>
+                    </div>
+                </header>
+            </div>
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <p>
+                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Cum illum error odit unde quam quidem modi.
+                <span class="animate" style="--i:2;"></span>
+            </p>
+            
+            
             <div class="btn-box">
                 <a href="#" class="btn">text</a>
                 <a href="#" class="btn">text</a>
+                <span class="animate" style="--i:3;"></span>
             </div>
         </div>
 
@@ -63,5 +265,6 @@
 
 
     <script src="script/index.js"></script>
+    <script src="script/tambah.js"></script>
 </body>
 </html>

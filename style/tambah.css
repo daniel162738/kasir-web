@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+}
+
+:root {     --bg-color: #000000;
+    --second-bg-color: #1d1d1d;
+    --text-color: #00c40a;
+    --main-color: #19551e;
+    --bg-h-color: #161718; 
+    --green1: #002502;
+    --green2: #0f3811;
+    --green3: #315332;
+    --green4: #67a769;
+    --test1: #a6ff00;
+    --test2: #e00700;
+    --test3: #2200e4;
+    
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background: linear-gradient(var(--test1) 50%, var(--test2) 50%);
+}
+
+.container {
+    padding: 20px;
+    box-shadow: 3px 3px 20px var(--test3);
+    background: var(--bg-color);
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 50px;
+}
+
+.container header .filterEntries {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filterEntries .entries {
+    color: var(--test1);
+}
+
+.filterEntries .entries select,
+.filterEntries .filter input {
+    padding: 7px 10px;
+    border: 1px solid var(--test2);
+    color: var(--test3);
+    background: var(--test1);
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.filterEntries .filter {
+    display: flex;
+    align-items: center;
+}
+
+.filter label {
+    color: var(--test3);
+    margin-right: 5px;
+}
+
+.filter input:focus {
+    border-color: var(--test1);
+}
+
+.container header .addItemBtn {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.animate {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: 98; }
+
+.logo .animate,
+.navbar .animate,
+.home-content h1 .animate,
+.home-content .text-animate h3 .animate,
+.home-content p .animate,
+.btn-box .animate {
+    animation: showRight 1s ease forwards;
+    animation-delay: calc(.3s * var(--i));
+}
+
+
+
+
+
+@keyframes homeBgText{
+    0%,
+    10%,
+    100% { background-position: -9rem 0; }/*ubah rem*/
+
+    65%,
+    85% { background-position: 0 0; }}
+
+@keyframes homeCursorText{
+    0%,
+    10%,
+    100% { width: 0; }
+
+    65%,
+    78%,
+    85% { width: 100%;
+          opacity: 1; }
+
+    75%,
+    81% { opacity: 0; }}
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
