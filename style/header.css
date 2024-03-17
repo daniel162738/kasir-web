@@ -125,11 +125,6 @@ section {   min-height: 100vh;
             font-weight: 700;
             line-height: 1.3; }
 
-.home-content .text-animate {
-            position: relative;
-            max-width: 9rem;
-            width: 9 rem; }/*ubah rem*/
-
 .home-content .text-animate h3 {
             position: relative;
             font-size: 3.2rem;

@@ -1,10 +1,20 @@
-var
-barang = nama barang
+link: https://daniel162738.github.io/kasir-web/
 
 
 
 
-container = konten
+
+
+var                 note
+barang          =   nama barang
+container       =   konten
+
+
+
+
+
+
+
 
 awal                                akhir
 addMemberBtn                        addItemBtn
