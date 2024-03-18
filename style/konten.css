@@ -1,8 +1,15 @@
+
+/*
+
 * {
-    margin: 0;
+    
 }
 
+*/
+
+
 :root {     --bg-color: #000000;
+            --ijo-tr: #0097261f;
             --second-bg-color: #1d1d1d;
             --text-color: #00c40a;
             --main-color: #19551e;
@@ -17,6 +24,9 @@
     
 
 }
+
+
+
 
 body {
     display: flex;
@@ -33,6 +43,8 @@ body {
     border-radius: 20px;
     margin: 1px;
     margin-top: 20px;
+    
+    font-size: 140%; /* JANGAN LUPA UBAH FONT *//* JANGAN LUPA UBAH FONT *//* JANGAN LUPA UBAH FONT *//* JANGAN LUPA UBAH FONT */
 }
 
 .container header .filterEntries {
@@ -46,6 +58,8 @@ body {
     color: var(--text-color);
 }
 
+
+
 .filterEntries .entries select,
 .filterEntries .filter input {
     padding: 7px 10px;
@@ -56,6 +70,10 @@ body {
     outline: none;
     transition: 0.3s;
     cursor: pointer;
+}
+
+.filterEntries .entries select {
+    padding: 5px 10px;
 }
 
 .filterEntries .filter {
@@ -155,7 +173,43 @@ header .addItemBtn button {
 
 
 
+.container table {
+    border-collapse: collapse;
+    text-align: center;
+}
 
+.container table thead tr th:nth-child(1) {width: 5%;}
+.container table thead tr th:nth-child(2) {width: 40%;}
+.container table thead tr th:nth-child(3) {width: 5%;}
+.container table thead tr th:nth-child(4) {width: 5%;}
+.container table thead tr th:nth-child(5) {width: 5%;}
+.container table thead tr th:nth-child(6) {width: 5%;}
+.container table thead tr th:nth-child(7) {width: 5%;}
+.container table thead tr th:nth-child(8) {width: 59%;}
+
+.container table tbody tr td:nth-child(1) {text-align: right;}
+.container table tbody tr td:nth-child(3) {text-align: right;}
+.container table tbody tr td:nth-child(4) {text-align: right;}
+.container table tbody tr td:nth-child(5) {text-align: right;}
+.container table tbody tr td:nth-child(6) {text-align: right;}
+.container table tbody tr td:nth-child(7) {text-align: right;}
+
+table .heading {
+    background: var(--ijo-tr);
+}
+
+table tr th, table tr td {
+    padding: 4px 15px;
+}
+
+table tr th {
+    padding: 12px 15px;
+}
+
+table tr:hover {
+    cursor: pointer;
+    background: var(--ijo-tr);
+}
 
 
 

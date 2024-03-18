@@ -5,13 +5,14 @@
 * {         margin: 0;
             padding: 0;
             box-sizing: border-box;
-            text-decoration: none;
-            border: none;
+            text-decoration: none;    /*
+            border: none;  */
             outline: none;
             scroll-behavior: smooth;
             font-family: 'Poppins', sans-serif; }
 
 :root {     --bg-color: #000000;
+            --ijo-tr: #0097261f;
             --second-bg-color: #1d1d1d;
             --text-color: #00c40a;
             --main-color: #19551e;
@@ -110,14 +111,14 @@ section {   min-height: 100vh;
 
 .home {     display: flex;
             justify-content: center;
-            align-items: center, flex-start;
+            align-items: flex-start;
             align-content: center;
             text-align: center;
             padding: 6% 9%;
             overflow-y: auto; }
 
 .home-content {
-            max-width: 90rem; }
+            max-width: 120rem; }
 
 .home-content h1 {
             position: relative;
