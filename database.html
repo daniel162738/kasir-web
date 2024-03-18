@@ -57,7 +57,7 @@
 
 
         <a href="#" class="logo">
-            SMB
+            Username
             <span class="animate" style="--i:1;"></span>
         </a>
 
@@ -115,7 +115,7 @@
 
 
             <h1>
-                Minimarket Online
+                Miseriap
                 <span class="animate" style="--i:3;"></span>
             </h1>
 
@@ -195,13 +195,17 @@
 
                     <tbody>
                         <tr>
+                            <td class="empty" colspan="11" align="center">.</td></tr>
+                        
+                        <!--
+                        <tr>
                             <td>1</td>
                             <td>Beras</td>
                             <td>3000000</td>
                             <td>30</td>
-                            <td>3321</td>
+                            <td>33</td>
                             <td>140009</td>
-                            <td>24/02/2024</td>
+                            <td>24/02/20</td>
                             <td>
                                 <button><i class="fa-regular fa-eye"></i></button>
                                 <button><i class="fa-regular fa-pen-to-square"></i></button>
@@ -216,8 +220,8 @@
                             <td>3000000</td>
                             <td>30</td>
                             <td>3321</td>
-                            <td>140009</td>
-                            <td>24/02/2024</td>
+                            <td>14009</td>
+                            <td>24/022024</td>
                             <td>
                                 <button><i class="fa-regular fa-eye"></i></button>
                                 <button><i class="fa-regular fa-pen-to-square"></i></button>
@@ -229,7 +233,7 @@
                         <tr>
                             <td>1</td>
                             <td>Beras</td>
-                            <td>3000000</td>
+                            <td>30000</td>
                             <td>30</td>
                             <td>3321</td>
                             <td>140009</td>
@@ -240,7 +244,7 @@
                                 <button><i class="fa-regular fa-trash-can"></i></button>
                             </td>
                             
-                        </tr>
+                        </tr>-->     
 
 
                     </tbody>
@@ -258,7 +262,7 @@
                     <span>1 ke 10 dari 50 daftar</span>
                     <div class="pagination">
                         <button>Prev</button>
-                        <button>1</button>
+                        <button class="active">1</button>
                         <button>2</button>
                         <button>3</button>
                         <button>4</button>
@@ -358,9 +362,104 @@
     -->
 
 
+    <div class="dark_bg">
+
+        <div class="popup">
+            <header>
+                <h2 class="modalTitle">
+                    Tambahkan stock barang Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, minus!
+                </h2>
+                <button class="closeBtn">&times;</button>
+            </header>
+    
+            <div class="body">
+                <form action="#" id="myForm">
+
+                    <!--
+                    <div class="imgholder">
+                        <label for="uploadimg">
+                            <input type="file" name="" id="uploadimg" class="picture">
+                            <i class="fa-solid fa-plus"></i>
+                        </label>
+                        <img
+                            src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cnnindonesia.com%2Fhiburan%2F20220630182708-225-815713%2F9-fakta-tentang-anya-forger-esper-cilik-di-anime-spy-x-family&psig=AOvVaw0TLTbyAWf6kgFhnB9vw0sP&ust=1710886485945000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCJj-3vvq_oQDFQAAAAAdAAAAABAE"
+                            alt=""
+                            width="150"
+                            height="150"
+                            class="img"
+                        >
+                    </div>
+                    -->
+
+
+
+
+                    <div class="inputFieldContainer">
+
+
+                        <div class="satuField">
+                            <div class="form_control">
+                                <label for="fNama">Nama</label>
+                                <input type="text" name="" id="fNama" required>
+                            </div>
+
+                            <div class="form_control">
+                                <label for="fModal">Modal</label>
+                                <input type="number" name="" id="fModal" required>
+                            </div>
+
+                            <div class="form_control">
+                                <label for="fHarga">Harga</label>
+                                <input type="number" name="" id="fHarga" required>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="duaField">
+                            <div class="form_control">
+                                <label for="fkode">Kode</label>
+                                <input type="text" name="" id="fKode" required>
+                            </div>
+
+                            <div class="form_control">
+                                <label for="fQty">Qty</label>
+                                <input type="number" name="" id="fQty" required>
+                            </div>
+
+                            <div class="form_control">
+                                <label for="fWaktu">Waktu</label>
+                                <input type="date" name="" id="fWaktu" required>
+                            </div>
+                        </div>
+
+
+
+
+                        
+
+
+
+                    </div>
+                </form>
+            </div>
+            <footer>
+                <button form="myForm" class="submitBtn">Tambah</button>
+            </footer>
+        </div>
+    </div>
+    
+
+
 
     </section>
 <!--   -   -   K   -   -   O   -   -   N   -   -   T   -   -   E   -   -   N   -   -   -->
+
+
+
+
+
 
 
     <script src="script/foral.js"></script>

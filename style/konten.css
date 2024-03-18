@@ -100,7 +100,7 @@ body {
     margin-bottom: 15px;
 }
 
-header .addItemBtn button {
+header .addItemBtn button, .popup header .closeBtn, .popup footer .submitBtn {
     padding: 9px 14px;
     color: var(--bg-color);
     background: var(--main-color);
@@ -175,6 +175,11 @@ header .addItemBtn button {
 
 
 
+
+
+
+
+
 .container table {
     border-collapse: collapse;
     text-align: center;
@@ -190,12 +195,18 @@ header .addItemBtn button {
 .container table thead tr th:nth-child(7) {width: 1%;}
 .container table thead tr th:nth-child(8) {width: 17%;} /* angka tetap */
 
-.container table tbody tr td:nth-child(1) {text-align: right;}
-.container table tbody tr td:nth-child(3) {text-align: right;}
-.container table tbody tr td:nth-child(4) {text-align: right;}
-.container table tbody tr td:nth-child(5) {text-align: right;}
-.container table tbody tr td:nth-child(6) {text-align: right;}
-.container table tbody tr td:nth-child(7) {text-align: right;}
+.container table tbody tr td:nth-child(1), .container table tbody tr td:nth-child(3),
+.container table tbody tr td:nth-child(4), .container table tbody tr td:nth-child(5),
+.container table tbody tr td:nth-child(6), .container table tbody tr td:nth-child(7) {
+    text-align: right;
+    
+}
+
+
+
+
+
+
 
 table .heading {
     background: var(--ijo-tr);
@@ -345,6 +356,9 @@ footer .pagination button {
 
 
 
+table tr .empty {
+    text-align: center;
+}
 
 
 
@@ -362,15 +376,56 @@ footer .pagination button {
 
 
 
+.dark_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.dark_bg .popup {
+    border-radius: 5px;
+    box-shadow: var(--text-color);
+    background: var(--second-bg-color);
+    transition: 0.4s;
+    user-select: none;
+}
 
+.popup header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--bg-color);
+    padding: 10px 20px;
+}
 
+.popup header .closeBtn {
+    font-size: 30px;
+    font-weight: 300;
+    padding: 0 15px;
+}
 
+.popup header .closeBtn:hover, .popup footer .submitBtn:hover {
+    border-color: var(--bg-color);
+    transition: 0.3s;
+}
 
+.popup footer {
+    border-top: var(--bg-color);
+    padding: 12px 20px;
+    text-align: right;
+}
 
-
-
-
+.popup form {
+    padding: 10px 20px;
+    display: flex;
+    align-items: flex-start;
+}
 
 
 
