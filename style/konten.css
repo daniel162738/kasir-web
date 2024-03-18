@@ -18,6 +18,8 @@
             --green2: #0f3811;
             --green3: #315332;
             --green4: #67a769;
+            --green5-trns: #041306b0;
+            --blue: #00abb831;
             --test1: #a6ff00;
             --test2: #e00700;
             --test3: #2200e4;
@@ -176,16 +178,17 @@ header .addItemBtn button {
 .container table {
     border-collapse: collapse;
     text-align: center;
+    
 }
 
-.container table thead tr th:nth-child(1) {width: 5%;}
-.container table thead tr th:nth-child(2) {width: 40%;}
-.container table thead tr th:nth-child(3) {width: 5%;}
-.container table thead tr th:nth-child(4) {width: 5%;}
-.container table thead tr th:nth-child(5) {width: 5%;}
-.container table thead tr th:nth-child(6) {width: 5%;}
-.container table thead tr th:nth-child(7) {width: 5%;}
-.container table thead tr th:nth-child(8) {width: 59%;}
+.container table thead tr th:nth-child(1) {width: 1%;}
+.container table thead tr th:nth-child(2) {width: 30%;}
+.container table thead tr th:nth-child(3) {width: 1%;}
+.container table thead tr th:nth-child(4) {width: 1%;}
+.container table thead tr th:nth-child(5) {width: 1%;}
+.container table thead tr th:nth-child(6) {width: 1%;}
+.container table thead tr th:nth-child(7) {width: 1%;}
+.container table thead tr th:nth-child(8) {width: 17%;} /* angka tetap */
 
 .container table tbody tr td:nth-child(1) {text-align: right;}
 .container table tbody tr td:nth-child(3) {text-align: right;}
@@ -198,6 +201,11 @@ table .heading {
     background: var(--ijo-tr);
 }
 
+table .heading th:hover {
+    background: var(--green5-trns);
+    transition: 0.3s;
+}
+
 table tr th, table tr td {
     padding: 4px 15px;
 }
@@ -206,19 +214,82 @@ table tr th {
     padding: 12px 15px;
 }
 
+
+table tr td {
+    border-bottom: 1px solid var(--bg-color);
+}
+
+table tbody tr:first-child td {
+    border-top: 1px solid var(--bg-color);
+}
+
+
+/*table tbody tr:nth-child(odd) {
+    background: #41414149;
+    
+}*/
+
 table tr:hover {
     cursor: pointer;
     background: var(--ijo-tr);
+    
+}
+
+table td button {
+    position: relative;
+    margin: 0 3px;
+    padding: 1px;
+    width: 35px;
+    color: var(--bg-color);
+    background: var(--main-color);
+    font-size: 16px;
+    cursor: pointer;
+    pointer-events: auto;
+    outline: none;
+    border: 2px solid var(--main-color);
+    border-radius: 15%;
+    z-index: 1;
+}
+
+table td button:hover {
+    color: var(--main-color);
+}
+
+table td button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: .5s;
+    border-radius: 15%;
+}
+
+table td button:hover::before {
+    width: 100%;
 }
 
 
 
+/*
+.btn-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: .5s; }
 
+.btn-box .btn:hover:before {
+    width: 100%; }
 
-
-
-
-
+*/
 
 
 
