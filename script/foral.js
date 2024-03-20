@@ -6,6 +6,7 @@ var newItemAddBtn = document.querySelector('.addItemBtn'),
     modalTitle = document.querySelector('.modalTitle'),
     popupFooter = document.querySelector('.popupFooter'),
     form = document.querySelector('form'),
+    formInputFields = document.querySelectorAll('form input'),
 
     fNama = document.getElementById("fNama"),
     fModal = document.getElementById("fModal"),
@@ -172,6 +173,30 @@ showInfo()
 
 
 
+function readInfo(Namare, Modalre, Qtyre, Kodere, Hargare, Wakture){
+    fNama.value = Namare
+    fModal.value = Modalre
+    fQty.value = Qtyre
+    fKode.value = Kodere
+    fHarga.value = Hargare
+    fWaktu.value = Wakture
+
+    darkBg.classList.add('active')
+    popupForm.classList.add("active")
+    popupFooter.style.display = "none"
+    modalTitle.innerHTML = "Profile"
+    formInputFields.forEach (input => {
+        input.disabled = true
+    })
+}
+
+function editInfo(Namare, Modalre, Qtyre, Kodere, Hargare, Wakture){
+    isEdit = true
+}
+
+
+
+
 form.addEventListener('submit', (e)=> {
     e.preventDefault()
 
@@ -265,7 +290,7 @@ function paginationBtn(i){
     highlightIndexBtn()
 
     if(currentIndex > maxIndex - 1){
-        nextBtn.classList.remove('acts')
+        nextBtn.classList.remove('act')
     }
     else{
         nextBtn.classList.add("act")

@@ -3,7 +3,7 @@ link: https://daniel162738.github.io/kasir-web/
 
 
 NOTE
-sampai: cript img
+sampai: editInfo js
 
 
 var                 note
