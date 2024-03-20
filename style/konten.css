@@ -319,21 +319,19 @@ footer .pagination {
 footer .pagination button {
     width: 40px;
     padding: 5px 0;
-    color: var(--test1);
+    color: var(--text-color);
     background: transparent;
     font-size: 16px;
     cursor: pointer;
     pointer-events: auto;
     outline: none;
-    border: 1px solid var(--test2);
-    /*border-left: none;*/
+    border: 1px solid var(--text-color);
     margin: 0;
 }
 
 .pagination button:first-child {
     width: 85px;
     border-radius: 5px;
-    /*border-left: 1px solid var(--test3);*/
     opacity: 0.6;
     pointer-events: none;
 }
@@ -346,11 +344,18 @@ footer .pagination button {
 }
 
 .pagination button.active, .pagination button:hover {
-    background: var(--test1);
+    background: var(--ijo-tr);
 }
 
+.pagination button.act:first-child {
+    opacity: 1;
+    pointer-events: auto;
+}
 
-
+.pagination button.act:last-child {
+    opacity: 1;
+    pointer-events: auto;
+}
 
 
 
@@ -386,14 +391,19 @@ table tr .empty {
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    visibility: hidden;
 }
 
-.dark_bg .popup {
+.popup {
     border-radius: 5px;
     box-shadow: var(--text-color);
     background: var(--second-bg-color);
     transition: 0.4s;
     user-select: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.7);
 }
 
 .popup header {
@@ -416,7 +426,7 @@ table tr .empty {
 }
 
 .popup footer {
-    border-top: var(--bg-color);
+    border-top: 1px solid var(--bg-color);
     padding: 12px 20px;
     text-align: right;
 }
@@ -427,16 +437,51 @@ table tr .empty {
     align-items: flex-start;
 }
 
+form .inputFieldContainer .satuField,
+form .inputFieldContainer .duaField {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
 
+form .inputFieldContainer .satuField input,
+form .inputFieldContainer .duaField input {
+    width: 200px;
+}
 
+.inputFieldContainer .form_control {
+    margin: 10px 0;
+}
 
+.inputFieldContainer .form_control label {
+    display: block;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
 
+.form_control input {
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    background: var(--bg-h-color);
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+    width: 100%;
+}
 
+.form_control input:focus,
+.form_control input:valid {
+    border-color: var(--bg-color);
+}
 
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    display: none;
+}
 
-
-
-
-
-
-
+.active {
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+}

@@ -3,7 +3,7 @@ link: https://daniel162738.github.io/kasir-web/
 
 
 NOTE
-sampai css: .popup form
+sampai: cript img
 
 
 var                 note
@@ -32,3 +32,4 @@ city                                fQty
 postSalary                          kodeHargaField
 position                            fKode
 salary                              fHarga
+                                    fWaktu
